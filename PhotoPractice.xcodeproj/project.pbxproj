@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DCB39D42A41C5A800D75690 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 3DCB39D32A41C5A800D75690 /* YPImagePicker */; };
 		3DCDC1822A4076DC0090028E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC1812A4076DC0090028E /* AppDelegate.swift */; };
 		3DCDC1842A4076DC0090028E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC1832A4076DC0090028E /* SceneDelegate.swift */; };
 		3DCDC1862A4076DC0090028E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC1852A4076DC0090028E /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCDC1972A4078290090028E /* SnapKit in Frameworks */,
+				3DCB39D42A41C5A800D75690 /* YPImagePicker in Frameworks */,
 				3DCDC19A2A4078810090028E /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +103,7 @@
 			packageProductDependencies = (
 				3DCDC1962A4078290090028E /* SnapKit */,
 				3DCDC1992A4078810090028E /* Then */,
+				3DCB39D32A41C5A800D75690 /* YPImagePicker */,
 			);
 			productName = PhotoPractice;
 			productReference = 3DCDC17E2A4076DC0090028E /* PhotoPractice.app */;
@@ -133,6 +136,7 @@
 			packageReferences = (
 				3DCDC1952A4078290090028E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3DCDC1982A4078810090028E /* XCRemoteSwiftPackageReference "Then" */,
+				3DCB39D22A41C5A800D75690 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 3DCDC17F2A4076DC0090028E /* Products */;
 			projectDirPath = "";
@@ -314,16 +318,23 @@
 				DEVELOPMENT_TEAM = 6WZYJKR3V9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoPractice/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용을 허용해주세요!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 사용 권한을 허용해주세요!";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근 권한을 허용해주세요!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KHcoding.PhotoPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = kangho.BC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,16 +352,23 @@
 				DEVELOPMENT_TEAM = 6WZYJKR3V9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoPractice/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용을 허용해주세요!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 사용 권한을 허용해주세요!";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근 권한을 허용해주세요!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KHcoding.PhotoPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -382,6 +400,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3DCB39D22A41C5A800D75690 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker#usage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		3DCDC1952A4078290090028E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -401,6 +427,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3DCB39D32A41C5A800D75690 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DCB39D22A41C5A800D75690 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
 		3DCDC1962A4078290090028E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3DCDC1952A4078290090028E /* XCRemoteSwiftPackageReference "SnapKit" */;

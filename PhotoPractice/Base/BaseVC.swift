@@ -13,8 +13,10 @@ class BaseVC: UIViewController {
         super.viewDidLoad()
         addView()
         location()
+        addTarget()
     }
     
     func addView(){}
     func location(){}
+    func addTarget(){}
 }
